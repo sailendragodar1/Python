@@ -1,46 +1,67 @@
-#Loop List
+# -----------------------------
+# Loop List
+# -----------------------------
+# 1. Loop through a list
+# 2. Loop through the index numbers
+# 3. Using a while loop
+# 4. Looping using list comprehension
 
-#following numbers are questions numbers
-#--and below hash numbers are there answers....
+# ==========================================
+# 1. Loop through a list
+# ==========================================
 
-#1.   Loop through a list
-#2.   Loop Through the Index Numbers
-#3.   Using a While Loop
-#4.  Looping Using List Comprehension
+lists = ["kxa", 2, 3, "ram"]
 
- #1
- lists=["kxa",2,3,"ram"]
-for x in lists: #printing all the items from a list one by one!
-  print(x)
+print("Loop Through a List")
+for x in lists:
+    print(x)
 
-  #code
-ram=["RAM","BABU",23,34,35,56,67,78]
+print()
+
+ram = ["RAM", "BABU", 23, 34, 35, 56, 67, 78]
+
+print("Another Example")
 for x in ram:
-  print(x)
-  print(ram)
- 
- 
- 
-  #2
-#you can also loop through the list items by referring to their index number.
-#Use the range() and len() functions to create a suitable iterable.
+    print(x)
+
+print()
 
 
-List=["ram","babu",23,"Ghimire"]
-for i in range(len(List)):  #LOOPING through index numbers
-  print(List[i])
+# ==========================================
+# 2. Loop Through the Index Numbers
+# ==========================================
+
+my_list = ["ram", "babu", 23, "Ghimire"]
+
+print("Loop Through Index Numbers")
+for i in range(len(my_list)):
+    print(my_list[i])
+
+print()
 
 
-#3
-List=["ram","babu",23,"Ghimire"]
-i=0
-while i < len(List):
-  print(List[i])
-  i=i+1
+# ==========================================
+# 3. Using a While Loop
+# ==========================================
 
-#4
-#Looping Using List Comprehension
+my_list = ["ram", "babu", 23, "Ghimire"]
 
-List=["ram","babu",23,"Ghimire"]
-[print(x) for x in List]
+print("Using While Loop")
 
+i = 0
+while i < len(my_list):
+    print(my_list[i])
+    i += 1
+
+print()
+
+
+# ==========================================
+# 4. Looping Using List Comprehension
+# ==========================================
+
+my_list = ["ram", "babu", 23, "Ghimire"]
+
+print("Using List Comprehension")
+
+[print(x) for x in my_list]
